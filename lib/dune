@@ -1,0 +1,4 @@
+(library
+ (name ray_tracing_in_one_weekend_ocaml)
+ (libraries core)
+ (preprocess (pps ppx_jane)))
