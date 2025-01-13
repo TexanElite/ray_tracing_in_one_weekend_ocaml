@@ -1,5 +1,5 @@
 (executable
  (public_name ray_tracing_in_one_weekend_ocaml)
  (name main)
- (libraries core ray_tracing_in_one_weekend_ocaml)
+ (libraries core_unix ray_tracing_in_one_weekend_ocaml)
  (preprocess (pps ppx_jane)))

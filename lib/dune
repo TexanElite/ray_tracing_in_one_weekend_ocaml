@@ -1,4 +1,4 @@
 (library
  (name ray_tracing_in_one_weekend_ocaml)
- (libraries core)
+ (libraries core_unix core_unix.interval_lib)
  (preprocess (pps ppx_jane)))

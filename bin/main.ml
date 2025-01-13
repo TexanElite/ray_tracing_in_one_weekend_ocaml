@@ -3,7 +3,7 @@ open Core
 open Ray_tracing_in_one_weekend_ocaml.Import
 
 let ray_color r world =
-  match Hittables.hit_any world ~ray:r ~ray_tmin:0. ~ray_tmax:1000. with
+  match Hittables.hit_any world ~ray:r ~ray_t:(Interval_lib.Interval.create 0. Float.infinity) with
   | Some hit ->
     Color.scale (Vec3.add (Hit.normal hit) (Vec3.create 1. 1. 1.)) 0.5
   | None ->
